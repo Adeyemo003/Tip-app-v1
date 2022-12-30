@@ -71,12 +71,20 @@ main{
     flex-basis: 310px;
 }
 
-.title{
+
+.title , #alert{
     font-size: 0.57rem;
     font-weight: 700;
     color: hsl(186, 14%, 43%);
     margin-bottom: 10px; 
     line-height: 30px;
+}
+
+#alert{
+    color: hsl(0, 70%, 49%);
+    right: 0;
+    position: absolute;
+    /* height: 100%; */
 }
 
 #title {
@@ -144,21 +152,21 @@ input[type="text"]{
     text-align: right;
 }
 
-input[type="text"]:focus {
+input[type="number"]:focus {
    outline: 0;
    border: 1.5px solid hsl(172, 67%, 45%);
    box-shadow: 0px 0px 2px 1px hsl(172, 67%, 45%); 
 }
 
- button{
+button{
     cursor: pointer;
- }
+}
  
- ::placeholder {
+::placeholder {
     font-weight: 600;
     color: hsl(186, 14%, 43%);
     font-size: 0.8rem;
- }
+}
 
 .c-1{
     display: grid;
@@ -220,38 +228,52 @@ input[type="text"]:focus {
 .cont-2{
     display: flex;
     flex-direction: column;
+    padding-top: 1.4rem;
+    min-height: 300px;
+    width: 100%;
 }
 
 .cont-2 section{
     margin-bottom: auto;
-    
 }
 
 .cont-2 section{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    gap: 1rem;
 }
 
 .amount-1 {
     display: flex;
     align-items: center;
-    height: 100px;
+    gap: 0.5rem;
 }
 
 .amount-2 {
     display: flex;
     align-items: center;
-    height: 100px;
+    gap: 0.5rem;
+}
+
+#tip-person, #total-person{
+    margin: 0;
 }
 
 .tip-value {
     margin-left: auto;
+    min-width: 0;
+    overflow: scroll;
+}
+
+.tip-person{
+    flex: 0 1 1;
 }
 
 .tip-person,.total{
     font-size: 0.57rem;
     color: hsl(0, 0%, 100%);
     font-weight: 600;
+    box-sizing: border-box;
 }
 
 #s-1{
