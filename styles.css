@@ -259,10 +259,20 @@ button{
     margin: 0;
 }
 
+
+
 .tip-value {
     margin-left: auto;
     min-width: 0;
     overflow: scroll;
+}
+
+@media all and ( max-width: 375px) {
+    .tip-value {
+        margin-left: auto;
+        min-width: 0;
+        overflow: auto;
+    }
 }
 
 .tip-person{
