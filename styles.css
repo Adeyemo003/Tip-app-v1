@@ -267,7 +267,7 @@ button{
     overflow: scroll;
 }
 
-@media all and ( max-width: 375px) {
+@media all and ( min-width: 764px) {
     .tip-value {
         margin-left: auto;
         min-width: 0;
